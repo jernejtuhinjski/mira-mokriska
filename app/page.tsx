@@ -344,7 +344,7 @@ export default async function HomePage() {
                 zgodba se vrača v slovensko literarno zavest.
               </p>
               <Link
-                href="/novice/bukla-intervju-januar-2026"
+                href="/novice/razgaljeno-srce-gorenjski-glas"
                 className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors duration-200 cursor-pointer text-sm font-medium group"
               >
                 Preberi več
