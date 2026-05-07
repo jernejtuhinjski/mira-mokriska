@@ -42,7 +42,7 @@ const themes = [
 ];
 
 const colophon = [
-  { label: "Avtorica", value: "Mira Mokriška (Anica Omejc)" },
+  { label: "Avtorica", value: "Mira Mokriška" },
   { label: "Urednici / Predgovor", value: "Lucija Baša, Nataša Hribar" },
   { label: "Strani", value: "108" },
   { label: "Vezava", value: "Trda" },
@@ -58,6 +58,7 @@ const partners = [
   { name: "Gimnazija in SŠ Rudolfa Maistra Kamnik", short: "Gimnazija Kamnik" },
   { name: "KUD Franc Jelovšek Mengeš", short: "KUD Mengeš" },
   { name: "Studio Primer", short: "Primer" },
+  { name: "Creatim", short: "Creatim" },
 ];
 
 const archivePhotos = [
@@ -176,7 +177,7 @@ export default function KnjigaPage() {
               <h2>O knjigi</h2>
               <p>
                 <em>Razgaljeno srce</em> je prva zbirka izbranih del pesnice
-                Mire Mokriške — Anice Omejc — ki je v zgodnjem 20. stoletju
+                Mire Mokriške, ki je v zgodnjem 20. stoletju
                 drzno vstopila v slovensko literarno pokrajino v času, ko so
                 bili ženski glasovi na samem robu.
               </p>

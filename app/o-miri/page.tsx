@@ -30,7 +30,7 @@ const timelineItems: TimelineItem[] = [
   },
   {
     period: "1903–1914",
-    title: "Poroka in Goriška leta",
+    title: "Poroka in goriška leta",
     content:
       "Poroči se s Francem Žemljo, železniškim uradnikom. Objavlja v Domačem prijatelju, Mohorjevi družbi (Pravljice, 1913). Čez dan gospodinji, ponoči piše in igra klavir.",
     postaja: 1,
@@ -69,7 +69,7 @@ const facts = [
   { label: "Rojstvo", value: "7. november 1875, Ljubljana" },
   { label: "Smrt", value: "12. januar 1922, Ljubljana" },
   { label: "Zvrsti", value: "Lirika, proza, pravljice" },
-  { label: "Zapuščina", value: "20 rokopisnih zvezkov" },
+  { label: "Zapuščina", value: "Pesmi, pravljice, potopisi, korespondenca" },
 ];
 
 export default function OMiriPage() {
@@ -180,7 +180,7 @@ export default function OMiriPage() {
                 pokrajino v obdobju, ko so bili ženski glasovi na samem robu
                 literarnega prizorišča. Pisala je pod psevdonimom, ki je
                 združeval njeno ime Mira in Mokriške planine nad Iškim
-                Vintgarjem, kamor se je rada sprehajala.
+                Vintgarjem, kjer se je rada sprehajala.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a

@@ -21,7 +21,7 @@ export default function KontaktPage() {
             Kontakt
           </h1>
           <p className="text-primary-foreground/70 text-lg max-w-xl leading-relaxed">
-            Veseli se vašega sporočila — za naročilo knjige, sodelovanje ali
+            Veselimo se vašega sporočila — za naročilo knjige, sodelovanje ali
             katerokoli vprašanje.
           </p>
         </div>
@@ -168,8 +168,9 @@ export default function KontaktPage() {
                   Anici Žemlja.
                 </p>
                 <p className="text-primary-foreground/70 leading-relaxed">
-                  Delujemo v sodelovanju z lokalno skupnostjo, kulturnimi
-                  ustanovami in ljubitelji literature po vsej Sloveniji.
+                  Delujemo v sodelovanju z lokalno skupnostjo, kulturnimi in
+                  znanstvenimi ustanovami ter z ljubitelji literature po vsej
+                  Sloveniji in v zamejstvu.
                 </p>
               </div>
 
@@ -193,6 +194,7 @@ export default function KontaktPage() {
                     "Gimnazija in SŠ Rudolfa Maistra Kamnik",
                     "KUD Franc Jelovšek Mengeš",
                     "Studio Primer",
+                    "Creatim",
                   ].map((p) => (
                     <li key={p} className="flex items-center gap-3">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />

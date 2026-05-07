@@ -23,6 +23,7 @@ const partners = [
   "Gimnazija in SŠ Rudolfa Maistra Kamnik",
   "KUD Franc Jelovšek Mengeš",
   "Studio Primer",
+  "Creatim",
 ];
 
 export default async function HomePage() {
@@ -84,7 +85,7 @@ export default async function HomePage() {
               <p className="text-foreground/70 text-lg leading-relaxed mb-10 max-w-xl">
                 Prostor za raziskovanje, ohranjanje in navdih ženskega
                 ustvarjalnega izraza. Vračamo glas pozabljeni pesnici Miri
-                Mokriški — Anici Omejc (1875–1922).
+                Mokriški — Anici Žemlja (1875–1922).
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -111,7 +112,7 @@ export default async function HomePage() {
               <div className="relative" style={{ width: "460px", height: "600px" }}>
                 <Image
                   src="/images/Mira_Mokriska_portret_Background_Removed.webp"
-                  alt="Portret Mire Mokriške (Anice Omejc, 1875–1922)"
+                  alt="Portret Mire Mokriške (Anice Žemlja, 1875–1922)"
                   fill
                   className="object-contain object-bottom"
                   style={{
@@ -208,7 +209,7 @@ export default async function HomePage() {
               </p>
 
               <p className="text-foreground/70 leading-relaxed mb-4">
-                Prva zbirka izbranih del pesnice Mire Mokriške — Anice Omejc
+                Prva zbirka izbranih del pesnice Mire Mokriške — Anice Žemlja
                 — ki je v zgodnjem 20. stoletju drzno vstopila v literarno
                 pokrajino v času, ko so bili ženski glasovi na robu.
               </p>
@@ -266,21 +267,15 @@ export default async function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
 
-            {/* LEVO: Slika Mokriških planin */}
-            <div className="relative overflow-hidden rounded-sm mb-10 lg:mb-0 lg:mr-16">
+            {/* LEVO: Logotip inštituta */}
+            <div className="flex items-center justify-center mb-10 lg:mb-0 lg:mr-16">
               <Image
-                src="/images/Mokriške planine.jpg"
-                alt="Mokriške planine nad Iškim Vintgarjem"
-                width={700}
-                height={520}
-                className="w-full h-72 sm:h-96 lg:h-[520px] object-cover"
+                src="/images/Logo MM.png"
+                alt="Logotip Inštituta Mire Mokriške"
+                width={380}
+                height={380}
+                className="w-56 sm:w-72 lg:w-96 h-auto object-contain"
               />
-              {/* Mehak spodnji overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/35 via-transparent to-transparent" />
-              {/* Podpis */}
-              <p className="absolute bottom-4 left-5 text-white/80 text-xs italic">
-                Mokriške planine nad Iškim Vintgarjem
-              </p>
             </div>
 
             {/* DESNO: Tekst */}
@@ -298,7 +293,7 @@ export default async function HomePage() {
               <p className="text-foreground/70 leading-relaxed mb-8 text-base sm:text-lg">
                 Inštitut Mire Mokriške je posvečen odkrivanju, ohranjanju in
                 ponovnemu vračanju glasu pesnici in pisateljici Miri Mokriški
-                — Anici Omejc — ki je na prelomu 20. stoletja ustvarjala v
+                — Anici Žemlja — ki je na prelomu 20. stoletja ustvarjala v
                 senci pozabe. Naš namen je njeno literarno dediščino ohraniti
                 za prihodnje rodove in jo umestiti v slovensko kulturno
                 zgodovino.
