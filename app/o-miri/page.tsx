@@ -127,9 +127,28 @@ export default function OMiriPage() {
                 moderne. Njena rokopisna zapuščina obsega dvajset zvezkov,
                 popisanih z drobno, lepo pisavo.
               </p>
+
+              {/* Portrait — mobile only, below description */}
+              <div className="flex lg:hidden justify-center mt-8">
+                <div className="relative" style={{ width: "220px", height: "290px" }}>
+                  <Image
+                    src="/images/Mira_Mokriska_portret_Background_Removed.webp"
+                    alt="Portret Mire Mokriške (Anice Omejc)"
+                    fill
+                    className="object-contain object-bottom"
+                    style={{
+                      maskImage:
+                        "radial-gradient(ellipse 70% 85% at center, black 60%, transparent 100%)",
+                      WebkitMaskImage:
+                        "radial-gradient(ellipse 70% 85% at center, black 60%, transparent 100%)",
+                    }}
+                    priority
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Portrait */}
+            {/* Portrait — desktop only */}
             <div className="hidden lg:flex items-end justify-center flex-shrink-0">
               <div className="relative" style={{ width: "320px", height: "420px" }}>
                 <Image
