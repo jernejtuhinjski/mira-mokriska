@@ -44,7 +44,7 @@ export function getAllPosts(type: "novice" | "dogodki"): PostMeta[] {
       image: data.image,
       category: data.category,
       location: data.location,
-      archived: data.archived ?? false,
+      archived: data.archived ?? data.arhiv ?? false,
     } as PostMeta;
   });
 

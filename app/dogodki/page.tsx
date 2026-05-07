@@ -10,8 +10,10 @@ export const metadata: Metadata = {
 
 export default function DogodkiPage() {
   const all = getAllPosts("dogodki");
-  const upcoming = all.filter((e) => !e.archived);
-  const archive = all.filter((e) => e.archived);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const upcoming = all.filter((e) => new Date(e.date) >= today);
+  const archive = all.filter((e) => new Date(e.date) < today);
 
   return (
     <>
@@ -39,10 +41,10 @@ export default function DogodkiPage() {
           {upcoming.length === 0 ? (
             <div className="border border-border rounded-sm p-12 text-center">
               <p className="font-serif text-xl text-muted-foreground italic">
-                Trenutno ni napovedanih dogodkov.
+                Trenutno ni načrtovanih dogodkov.
               </p>
               <p className="text-sm text-muted-foreground mt-3">
-                Sledite nam za obvestila o prihodnjih dogodkih.
+                Spremljajte nas za novosti.
               </p>
             </div>
           ) : (
