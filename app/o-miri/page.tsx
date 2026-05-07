@@ -68,8 +68,8 @@ const facts = [
   { label: "Psevdonim", value: "Mira Mokriška" },
   { label: "Rojstvo", value: "7. november 1875, Ljubljana" },
   { label: "Smrt", value: "12. januar 1922, Ljubljana" },
-  { label: "Zvrsti", value: "Lirika, proza, pravljice" },
-  { label: "Zapuščina", value: "Pesmi, pravljice, potopisi, korespondenca" },
+  { label: "Zvrsti", value: "Pesmi, pravljice, potopisi, korespondenca" },
+  { label: "Zapuščina", value: "20 rokopisnih zvezkov" },
 ];
 
 export default function OMiriPage() {
