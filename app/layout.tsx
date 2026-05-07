@@ -33,7 +33,10 @@ export const metadata: Metadata = {
     "Prostor za raziskovanje, ohranjanje in navdih ženskega ustvarjalnega izraza. Odkrivamo in vračamo glas pozabljeni pesnici Miri Mokriški.",
   keywords: ["Mira Mokriška", "Razgaljeno srce", "pesnica", "inštitut", "Slovenija", "poezija"],
   icons: {
-    icon: "/images/Logo MM.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/images/Logo MM.png", type: "image/png" },
+    ],
     apple: "/images/Logo MM.png",
   },
   openGraph: {
