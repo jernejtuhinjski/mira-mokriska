@@ -224,6 +224,9 @@ export default function OMiriPage() {
                   Knjiga Razgaljeno srce →
                 </Link>
               </div>
+              <p className="mt-3 font-serif italic text-xs text-accent/70">
+                Avtorica besedila: Lucija Baša
+              </p>
             </div>
 
             {/* Right: biographical card */}
