@@ -17,6 +17,14 @@ const poems = [
   },
 ];
 
+const awards = [
+  {
+    title: "Naša Slovenija 2025",
+    issuer: "Kultura-Natura Slovenija",
+    url: "https://www.kultura-natura.si/2025/03/prejemniki-priznanj-nasa-slovenija-2025/",
+  },
+];
+
 const partners = [
   "Občina Kamnik",
   "Frančiškanski samostan Kamnik",
@@ -298,6 +306,44 @@ export default async function HomePage() {
                 za prihodnje rodove in jo umestiti v slovensko kulturno
                 zgodovino.
               </p>
+              {awards.length > 0 && (
+                <div className="mb-8">
+                  <p className="text-accent text-xs tracking-[0.2em] uppercase font-medium mb-2.5">
+                    Priznanje
+                  </p>
+                  {awards.map((award) => (
+                    <a
+                      key={award.title}
+                      href={award.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3 px-4 py-3 w-fit border border-border rounded-sm hover:border-accent transition-colors duration-200 cursor-pointer group"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.75"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                        className="text-accent flex-shrink-0"
+                      >
+                        <circle cx="12" cy="8" r="6" />
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                      </svg>
+                      <span className="font-serif text-sm leading-snug">
+                        <span className="font-medium text-foreground group-hover:text-accent transition-colors duration-200">
+                          {award.title}
+                        </span>
+                        <span className="text-muted-foreground"> · {award.issuer}</span>
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              )}
               <Link
                 href="/o-miri"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground font-medium text-sm tracking-wide rounded-sm hover:bg-primary/90 transition-colors duration-200 cursor-pointer group"
